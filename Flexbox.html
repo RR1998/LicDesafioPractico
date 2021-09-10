@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+
+<body>
+    <nav id="menu_nav">
+        <ul class="menu_ul">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="PseudoClases.html">Pseudo Clases</a></li>
+            <li><a href="Tablas.html">Tablas</a></li>
+            <li><a href="Selectores.html">Selectores</a></li>
+            <li><a href="Flexbox.html">Flexbox</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1 class="header">FlexBox</h1>
+    </header>
+
+    <section class="flexBoxSection">
+        <p>
+            El Módulo de Caja Flexible, comúnmente llamado flexbox, fue diseñado como un modelo unidimensional de
+            layout, y como un método que pueda ayudar a distribuir el espacio entre los ítems de una interfaz y mejorar
+            las capacidades de alineación. Este artículo hace un repaso de las principales características de flexbox,
+            las que exploraremos con mayor detalle en el resto de estas guías.
+
+            Cuando describimos a flexbox como unidimensional destacamos el hecho que flexbox maneja el layout en una
+            sola dimensión a la vez — ya sea como fila o como columna. Esto contrasta con el modelo bidimensional del
+            Grid Layout de CSS, el cual controla columnas y filas a la vez.
+        </p>
+    </section>
+    <section class="flexBoxSection">
+        <h2 class="h2Subtitle">
+            El eje principal
+        </h2>
+        <p>
+            El eje principal está definido por flex-direction, que posee cuatro posibles valores:
+        </p>
+        <ul class="axis">
+            <li><a>row</a></li>
+            <li><a>row-reverse</a></li>
+            <li><a>column</a></li>
+            <li><a>column-reverse</a></li>
+        </ul>
+        <p>
+            Si elegimos row o row-reverse, el eje principal correrá a lo largo de la fila según la dirección de la
+            línea.
+        </p>
+        <img
+            src="https://media.prod.mdn.mozit.cloud/attachments/2017/11/02/15614/28c51e9af9a679c112cace1dea8eec71/Basics1.png" />
+
+        <p>Al elegir column o column-reverse el eje principal correrá desde el borde superior de la página hasta el
+            final — según la dirección del bloque.</p>
+
+        <img
+            src="https://media.prod.mdn.mozit.cloud/attachments/2017/11/02/15615/5789d84db9e271d5947fc20fa1980227/Basics2.png" />
+    </section>
+    <section class="flexBoxSection">
+        <h2 class="h2Subtitle">
+            El eje cruzado
+        </h2>
+        <p>
+            El eje cruzado va perpendicular al eje principal, y por lo tanto si flex-direction (del eje principal) es
+            row o row-reverse el eje cruzado irá por las columnas.
+        </p>
+        <img
+            src="https://media.prod.mdn.mozit.cloud/attachments/2017/11/02/15616/48a1d67a5d86fe82221bf2076db98ccb/Basics3.png" />
+
+        <p>Si el eje principal es column o column-reverse entonces el eje cruzado corre a lo largo de las filas.</p>
+
+        <img
+            src="https://media.prod.mdn.mozit.cloud/attachments/2017/11/02/15617/db2fb92dd4515abfcb6e1153710a00bd/Basics4.png" />
+        <p>Entender cuál eje es cuál es importante cuando empezamos a mirar la alineación y justificación flexible de
+            los ítems; flexbox posee propiedades que permiten alinear y justificar el contenido sobre un eje o el otro.
+        </p>
+    </section>
+</body>
+
+</html>
